@@ -6,7 +6,10 @@ export default function Counter(){
         setCount(count=>count+1);
     }
     const decrease = () => {
-        setCount(count=>count-1);
+        if(count === 0)
+            setCount(count=>count=0);
+        else
+            setCount(count=>count-1);
     }
     return(
         <div className="container">
@@ -20,8 +23,7 @@ export default function Counter(){
                 <div className="col-sm-6 mt-5">
                     <button className="btn btn-danger" onClick={decrease}>Decrease</button>
                 </div>
-            </div>
-            
+            </div>           
         </div>
     )
 }
