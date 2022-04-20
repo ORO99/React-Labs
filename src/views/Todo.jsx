@@ -2,6 +2,7 @@ import { useSelector, useDispatch} from 'react-redux';
 import Form from '../components/form/Form';
 import List from '../components/list/List';
 import { addTodo, deleteTodo } from '../redux';
+import React from 'react';
 
 export default function Todo(){
     const todos = useSelector((state) => state.todos);

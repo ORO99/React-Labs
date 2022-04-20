@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from 'react';
 
 const Form = ({ addTodo }) =>{
     let [list, setList] = useState([]);
@@ -14,6 +15,7 @@ const Form = ({ addTodo }) =>{
         setList(oldList => [...oldList, newObj]);
         document.getElementById('title').value = '';
         document.getElementById('content').value = '';
+        console.log(list);
     }
     return (
         <>

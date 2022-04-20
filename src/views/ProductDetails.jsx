@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import React from 'react';
 
 export default function ProductDetails() {
     const [product, setProduct] = useState([])

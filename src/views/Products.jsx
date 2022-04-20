@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import './Products.css'
+import './Products.css';
+import React from 'react';
 
 export default function Products() {
     const [data, setData] = useState([]);

@@ -1,5 +1,6 @@
 import './Navbar.css';
 import { Link } from "react-router-dom";
+import React from 'react';
 export default function Navbar(){
     return(
         <nav className="navbar navbar-expand-lg navbar-dark p-2 ">
@@ -23,6 +24,9 @@ export default function Navbar(){
             </li>
             <li className="nav-item">
                 <Link className="nav-link" to="/Todo">Todo</Link>
+            </li>
+            <li className="nav-item">
+                <Link className="nav-link" to="/form">Form</Link>
             </li>
             </ul>
         </div>
