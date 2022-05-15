@@ -6,6 +6,7 @@
 trigger:
 - main
 
+
 pool:
   vmImage: agmadagent,
   name: Default
@@ -20,3 +21,10 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+
+- task: DownloadBuildArtifacts@1
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    artifactName: 'app'
+    downloadPath: '$(System.ArtifactsDirectory)'
