@@ -8,7 +8,7 @@ trigger:
 
 pool:
   vmImage: agmadagent,
-  name: default,
+  name: Default
 
 steps:
 - task: NodeTool@0
